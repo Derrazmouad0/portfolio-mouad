@@ -15,7 +15,6 @@ import {
   MapPin,
   Linkedin,
   ChevronDown,
-  FolderKanban,
   Briefcase,
   Award,
   Globe,
@@ -35,7 +34,17 @@ const PUBLIC_KEY = "3UcaVJHtnmdRz4Evi";
 const translations = {
   fr: {
     dir: "ltr",
-    nav: ["Accueil", "À propos", "Formation", "Projets", "Compétences", "Expérience", "Distinctions", "Langues", "Contact"],
+    nav: [
+      "Accueil",
+      "À propos",
+      "Formation",
+      "Projets",
+      "Compétences",
+      "Expérience",
+      "Distinctions",
+      "Langues",
+      "Contact",
+    ],
     heroSubtitle: "Étudiant en informatique",
     heroIntro:
       "Étudiant en informatique, je m’intéresse particulièrement aux systèmes, aux environnements Linux, à la programmation et aux technologies modernes. J’aime travailler sur des projets concrets et continuer à progresser en développement, en réseaux et en cybersécurité.",
@@ -45,7 +54,13 @@ const translations = {
     aboutText:
       "Je suis étudiant en informatique à l’ESAIP, à Aix-en-Provence. Au fil de mon parcours, j’ai acquis de bonnes bases en programmation, en systèmes, en réseaux et en sécurité informatique. J’aime apprendre, travailler en équipe et avancer sur des projets techniques qui demandent de la logique, de la rigueur et un peu de créativité.",
     heroTags: ["Linux", "Cybersécurité", "Systèmes", "Développement"],
-    heroIcons: ["Code", "Réseau", "Terminal", "Sécurité", "Base de données"],
+    heroIcons: [
+      "Code",
+      "Réseau",
+      "Terminal",
+      "Sécurité",
+      "Base de données",
+    ],
     educationTitle: "Formation",
     educationItems: [
       {
@@ -96,7 +111,13 @@ const translations = {
       systems: ["Ligne de commande Linux"],
       networks: ["TCP/IP", "HTTP", "HTTPS"],
       tools: ["Microsoft Office", "Google Workspace", "Clipchamp"],
-      soft: ["Autonomie", "Rigueur", "Créativité", "Esprit d’équipe", "Communication"],
+      soft: [
+        "Autonomie",
+        "Rigueur",
+        "Créativité",
+        "Esprit d’équipe",
+        "Communication",
+      ],
     },
     experienceTitle: "Expérience",
     internshipLabel: "Expérience",
@@ -123,7 +144,11 @@ const translations = {
     distinctionText:
       "Lauréat Thales STEM For All 2025, une distinction obtenue pour l’excellence académique et l’engagement dans les sciences et les technologies.",
     languagesTitle: "Langues",
-    languageItems: ["Arabe, langue maternelle", "Français, courant", "Anglais, intermédiaire"],
+    languageItems: [
+      "Arabe, langue maternelle",
+      "Français, courant",
+      "Anglais, intermédiaire",
+    ],
     contactTitle: "Contact",
     formTitle: "M’écrire",
     formName: "Nom complet",
@@ -146,7 +171,17 @@ const translations = {
   },
   en: {
     dir: "ltr",
-    nav: ["Home", "About", "Education", "Projects", "Skills", "Experience", "Distinctions", "Languages", "Contact"],
+    nav: [
+      "Home",
+      "About",
+      "Education",
+      "Projects",
+      "Skills",
+      "Experience",
+      "Distinctions",
+      "Languages",
+      "Contact",
+    ],
     heroSubtitle: "Computer Science Student",
     heroIntro:
       "Computer science student with a strong interest in systems, Linux environments, programming and modern technologies. I enjoy working on practical technical projects and improving my skills in software, networks and cybersecurity.",
@@ -207,7 +242,13 @@ const translations = {
       systems: ["Linux command line"],
       networks: ["TCP/IP", "HTTP", "HTTPS"],
       tools: ["Microsoft Office", "Google Workspace", "Clipchamp"],
-      soft: ["Autonomy", "Rigour", "Creativity", "Teamwork", "Communication"],
+      soft: [
+        "Autonomy",
+        "Rigour",
+        "Creativity",
+        "Teamwork",
+        "Communication",
+      ],
     },
     experienceTitle: "Experience",
     internshipLabel: "Experience",
@@ -257,7 +298,17 @@ const translations = {
   },
   ar: {
     dir: "rtl",
-    nav: ["الرئيسية", "نبذة", "التعليم", "المشاريع", "المهارات", "الخبرات", "التميّز", "اللغات", "التواصل"],
+    nav: [
+      "الرئيسية",
+      "نبذة",
+      "التعليم",
+      "المشاريع",
+      "المهارات",
+      "الخبرات",
+      "التميّز",
+      "اللغات",
+      "التواصل",
+    ],
     heroSubtitle: "طالب علوم الحاسوب",
     heroIntro:
       "أنا طالب في علوم الحاسوب وأهتم كثيرًا بالأنظمة وبيئات لينكس والبرمجة والتقنيات الحديثة. أحب العمل على مشاريع تقنية حقيقية وتطوير مهاراتي في البرمجيات والشبكات والأمن السيبراني.",
@@ -367,7 +418,17 @@ const translations = {
   },
   es: {
     dir: "ltr",
-    nav: ["Inicio", "Sobre mí", "Educación", "Proyectos", "Habilidades", "Experiencia", "Distinciones", "Idiomas", "Contacto"],
+    nav: [
+      "Inicio",
+      "Sobre mí",
+      "Educación",
+      "Proyectos",
+      "Habilidades",
+      "Experiencia",
+      "Distinciones",
+      "Idiomas",
+      "Contacto",
+    ],
     heroSubtitle: "Estudiante de Informática",
     heroIntro:
       "Estudiante de informática con un gran interés por los sistemas, los entornos Linux, la programación y las tecnologías modernas. Me gusta trabajar en proyectos técnicos concretos y seguir mejorando mis habilidades en software, redes y ciberseguridad.",
@@ -478,17 +539,53 @@ const translations = {
   },
 };
 
-const sectionIds = ["home", "about", "education", "projects", "skills", "experience", "distinctions", "languages", "contact"];
+const sectionIds = [
+  "home",
+  "about",
+  "education",
+  "projects",
+  "skills",
+  "experience",
+  "distinctions",
+  "languages",
+  "contact",
+];
 
 const socialLinks = [
-  { key: "email", icon: Mail, href: "mailto:derrazmouad0@gmail.com", text: "derrazmouad0@gmail.com" },
-  { key: "phone", icon: Phone, href: "tel:+33763583494", text: "+33 7 63 58 34 94" },
-  { key: "location", icon: MapPin, href: "#", text: "Aix-en-Provence, France" },
-  { key: "linkedin", icon: Linkedin, href: "https://www.linkedin.com/in/mouad-derraz/", text: "linkedin.com/in/mouad-derraz" },
+  {
+    key: "email",
+    icon: Mail,
+    href: "mailto:derrazmouad0@gmail.com",
+    text: "derrazmouad0@gmail.com",
+  },
+  {
+    key: "phone",
+    icon: Phone,
+    href: "tel:+33763583494",
+    text: "+33 7 63 58 34 94",
+  },
+  {
+    key: "location",
+    icon: MapPin,
+    href: "#",
+    text: "Aix-en-Provence, France",
+  },
+  {
+    key: "linkedin",
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/mouad-derraz/",
+    text: "linkedin.com/in/mouad-derraz",
+  },
 ];
 
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
+}
+
+function getMainTitleStyle(theme) {
+  return theme === "dark"
+    ? { color: "#f8fafc", textShadow: "0 0 18px rgba(34,211,238,0.10)" }
+    : { color: "#0f172a" };
 }
 
 function useStoredTheme() {
@@ -563,7 +660,10 @@ function AnimatedBackground({ theme }) {
       {[...Array(16)].map((_, i) => (
         <motion.div
           key={i}
-          className={cn("absolute rounded-full", theme === "dark" ? "bg-cyan-300/40" : "bg-sky-500/20")}
+          className={cn(
+            "absolute rounded-full",
+            theme === "dark" ? "bg-cyan-300/40" : "bg-sky-500/20"
+          )}
           style={{
             width: 2 + (i % 3),
             height: 2 + (i % 3),
@@ -571,14 +671,18 @@ function AnimatedBackground({ theme }) {
             top: `${(i * 13) % 100}%`,
           }}
           animate={{ y: [0, -12, 0], opacity: [0.15, 0.65, 0.15] }}
-          transition={{ duration: 4 + i * 0.4, repeat: Infinity, ease: "easeInOut" }}
+          transition={{
+            duration: 4 + i * 0.4,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         />
       ))}
     </div>
   );
 }
 
-function Section({ id, title, children, className = "" }) {
+function Section({ id, title, children, className = "", theme }) {
   return (
     <motion.section
       id={id}
@@ -586,11 +690,17 @@ function Section({ id, title, children, className = "" }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
-      className={cn("relative mx-auto w-full max-w-7xl px-6 py-16 md:px-10 lg:px-12", className)}
+      className={cn(
+        "relative mx-auto w-full max-w-7xl px-6 py-16 md:px-10 lg:px-12",
+        className
+      )}
     >
       <div className="mb-8 flex items-center gap-3">
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/50 to-transparent" />
-        <h2 className="text-center text-2xl font-semibold tracking-[0.18em] text-slate-900 dark:text-white md:text-3xl">
+        <h2
+          className="text-center text-2xl font-semibold tracking-[0.18em] md:text-3xl"
+          style={getMainTitleStyle(theme)}
+        >
           {title}
         </h2>
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-sky-400/50 to-transparent" />
@@ -738,11 +848,15 @@ function ContactForm({ t }) {
       </form>
 
       {status === "success" && (
-        <p className="mt-4 text-sm text-emerald-600 dark:text-emerald-400">{t.formSuccess}</p>
+        <p className="mt-4 text-sm text-emerald-600 dark:text-emerald-400">
+          {t.formSuccess}
+        </p>
       )}
 
       {status === "error" && (
-        <p className="mt-4 text-sm text-red-600 dark:text-red-400">{t.formError}</p>
+        <p className="mt-4 text-sm text-red-600 dark:text-red-400">
+          {t.formError}
+        </p>
       )}
     </>
   );
@@ -759,7 +873,23 @@ export default function App() {
     document.documentElement.lang = lang;
   }, [t.dir, lang]);
 
-  const navItems = useMemo(() => t.nav.map((label, index) => ({ label, id: sectionIds[index] })), [t.nav]);
+  useEffect(() => {
+    document.title = "Mouad Derraz | Portfolio";
+
+    let link = document.querySelector("link[rel='icon']");
+    if (!link) {
+      link = document.createElement("link");
+      link.rel = "icon";
+      document.head.appendChild(link);
+    }
+
+    link.href = "/favicon-portfolio.png";
+  }, []);
+
+  const navItems = useMemo(
+    () => t.nav.map((label, index) => ({ label, id: sectionIds[index] })),
+    [t.nav]
+  );
 
   const esaipLogo = "logo-esaip-dark.png";
   const sealLogo = "logo-seal-dark.png";
@@ -780,11 +910,20 @@ export default function App() {
 
         <header className="sticky top-0 z-50 px-4 pt-4 md:px-6">
           <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/20 bg-white/55 px-4 py-3 shadow-[0_8px_40px_rgba(15,23,42,0.08)] backdrop-blur-2xl dark:border-cyan-400/10 dark:bg-white/5 dark:shadow-[0_10px_40px_rgba(14,165,233,0.08)]">
-            <a href="#home" className="flex items-center gap-3 text-sm font-medium text-slate-900 dark:text-white">
+            <a
+              href="#home"
+              className="flex items-center gap-3 text-sm font-medium text-slate-900 dark:text-white"
+            >
               <div className="h-10 w-10 overflow-hidden rounded-full border border-white/20 bg-white/70 dark:border-white/10 dark:bg-white/5">
-                <img src="mouad-derraz-profile.jpg" alt="Mouad Derraz" className="h-full w-full object-cover" />
+                <img
+                  src="mouad-derraz-profile.jpg"
+                  alt="Mouad Derraz"
+                  className="h-full w-full object-cover"
+                />
               </div>
-              <span className="hidden text-sm font-semibold tracking-[0.12em] md:block">Mouad Derraz</span>
+              <span className="hidden text-sm font-semibold tracking-[0.12em] md:block">
+                Mouad Derraz
+              </span>
             </a>
 
             <nav className="hidden items-center gap-5 lg:flex">
@@ -827,7 +966,11 @@ export default function App() {
                 className="rounded-full border border-white/30 bg-white/60 p-2.5 text-slate-700 shadow-sm transition hover:scale-105 hover:text-sky-500 dark:border-white/10 dark:bg-white/5 dark:text-slate-200 dark:hover:text-cyan-300"
                 aria-label="Toggle theme"
               >
-                {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+                {theme === "dark" ? (
+                  <Sun className="h-4 w-4" />
+                ) : (
+                  <Moon className="h-4 w-4" />
+                )}
               </button>
 
               <button
@@ -854,7 +997,9 @@ export default function App() {
                     onClick={() => setLang(item.key)}
                     className={cn(
                       "rounded-full px-3 py-2 text-xs font-medium transition",
-                      lang === item.key ? "bg-sky-500 text-white" : "bg-slate-100 text-slate-700 dark:bg-white/5 dark:text-slate-200"
+                      lang === item.key
+                        ? "bg-sky-500 text-white"
+                        : "bg-slate-100 text-slate-700 dark:bg-white/5 dark:text-slate-200"
                     )}
                   >
                     <span className="inline-flex items-center gap-2">
@@ -882,14 +1027,36 @@ export default function App() {
         </header>
 
         <main className="relative z-10">
-          <section id="home" className="mx-auto flex min-h-[92vh] w-full max-w-7xl items-center px-6 py-12 md:px-10 lg:px-12">
+          <section
+            id="home"
+            className="mx-auto flex min-h-[92vh] w-full max-w-7xl items-center px-6 py-12 md:px-10 lg:px-12"
+          >
             <div className="grid w-full items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
-              <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-                <h1 className="mb-4 text-5xl font-semibold tracking-tight text-slate-950 dark:text-white md:text-7xl">
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                <h1
+                  className="mb-4 text-5xl font-semibold tracking-tight md:text-7xl"
+                  style={getMainTitleStyle(theme)}
+                >
                   Mouad Derraz
                 </h1>
-                <p className="mb-5 text-xl text-sky-600 dark:text-cyan-300 md:text-2xl">{t.heroSubtitle}</p>
-                <p className="max-w-2xl text-base leading-8 text-slate-600 dark:text-slate-300 md:text-lg">{t.heroIntro}</p>
+
+                <p
+                  className="mb-5 text-xl md:text-2xl"
+                  style={theme === "dark" ? { color: "#22d3ee" } : { color: "#0284c7" }}
+                >
+                  {t.heroSubtitle}
+                </p>
+
+                <p
+                  className="max-w-2xl text-base leading-8 md:text-lg"
+                  style={theme === "dark" ? { color: "#cbd5e1" } : { color: "#334155" }}
+                >
+                  {t.heroIntro}
+                </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
@@ -920,11 +1087,17 @@ export default function App() {
                     <motion.div
                       key={label}
                       animate={{ y: [0, -8, 0] }}
-                      transition={{ duration: 3 + i * 0.4, repeat: Infinity, ease: "easeInOut" }}
+                      transition={{
+                        duration: 3 + i * 0.4,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
                       className="rounded-2xl border border-white/20 bg-white/55 p-4 shadow-lg backdrop-blur-2xl dark:border-cyan-400/10 dark:bg-white/5"
                     >
                       <Icon className="h-5 w-5 text-sky-500 transition duration-300 dark:text-cyan-300" />
-                      <div className="mt-2 text-xs uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">{label}</div>
+                      <div className="mt-2 text-xs uppercase tracking-[0.22em] text-slate-500 dark:text-slate-400">
+                        {label}
+                      </div>
                     </motion.div>
                   ))}
                 </div>
@@ -940,7 +1113,11 @@ export default function App() {
                 <GlassCard className="relative overflow-hidden rounded-[36px] p-5">
                   <div className="relative rounded-[28px] border border-white/20 bg-gradient-to-br from-white/80 to-white/40 p-4 dark:border-cyan-400/10 dark:from-white/10 dark:to-white/5">
                     <div className="aspect-[4/5] overflow-hidden rounded-[24px] border border-white/30 bg-slate-100 dark:border-white/10 dark:bg-slate-950">
-                      <img src="mouad-derraz-profile.jpg" alt="Mouad Derraz" className="h-full w-full object-cover" />
+                      <img
+                        src="mouad-derraz-profile.jpg"
+                        alt="Mouad Derraz"
+                        className="h-full w-full object-cover"
+                      />
                     </div>
                   </div>
 
@@ -959,13 +1136,15 @@ export default function App() {
             </div>
           </section>
 
-          <Section id="about" title={t.aboutTitle}>
+          <Section id="about" title={t.aboutTitle} theme={theme}>
             <GlassCard>
-              <p className="mx-auto max-w-4xl text-center text-base leading-8 text-slate-600 dark:text-slate-300 md:text-lg">{t.aboutText}</p>
+              <p className="mx-auto max-w-4xl text-center text-base leading-8 text-slate-600 dark:text-slate-300 md:text-lg">
+                {t.aboutText}
+              </p>
             </GlassCard>
           </Section>
 
-          <Section id="education" title={t.educationTitle}>
+          <Section id="education" title={t.educationTitle} theme={theme}>
             <div className="relative mx-auto max-w-5xl">
               <div className="absolute left-5 top-0 hidden h-full w-px bg-gradient-to-b from-sky-400/70 via-cyan-300/40 to-transparent md:block" />
               <div className="space-y-6">
@@ -981,14 +1160,28 @@ export default function App() {
                     <div className="absolute start-0 top-7 hidden h-3.5 w-3.5 rounded-full bg-sky-400 shadow-[0_0_18px_rgba(56,189,248,0.9)] md:block" />
                     <GlassCard className="grid items-center gap-5 md:grid-cols-[1fr_auto]">
                       <div>
-                        <p className="mb-2 text-sm uppercase tracking-[0.22em] text-sky-600 dark:text-cyan-300">{item.period}</p>
-                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{item.title}</h3>
-                        <p className="mt-2 text-slate-600 dark:text-slate-300">{item.location}</p>
+                        <p className="mb-2 text-sm uppercase tracking-[0.22em] text-sky-600 dark:text-cyan-300">
+                          {item.period}
+                        </p>
+                        <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+                          {item.title}
+                        </h3>
+                        <p className="mt-2 text-slate-600 dark:text-slate-300">
+                          {item.location}
+                        </p>
                       </div>
                       {idx === 0 ? (
-                        <img src={esaipLogo} alt="ESAIP" className="h-16 w-auto object-contain opacity-95" />
+                        <img
+                          src={esaipLogo}
+                          alt="ESAIP"
+                          className="h-16 w-auto object-contain opacity-95"
+                        />
                       ) : (
-                        <img src={ministereLogo} alt={t.academicJourney} className="h-16 w-auto object-contain opacity-95" />
+                        <img
+                          src={ministereLogo}
+                          alt={t.academicJourney}
+                          className="h-16 w-auto object-contain opacity-95"
+                        />
                       )}
                     </GlassCard>
                   </motion.div>
@@ -997,7 +1190,7 @@ export default function App() {
             </div>
           </Section>
 
-          <Section id="projects" title={t.projectsTitle}>
+          <Section id="projects" title={t.projectsTitle} theme={theme}>
             <div className="grid gap-6 md:grid-cols-2">
               {t.projects.map((project, idx) => (
                 <GlassCard key={project.title} className="relative overflow-hidden">
@@ -1007,31 +1200,55 @@ export default function App() {
                       <div className="mb-2 text-xs uppercase tracking-[0.26em] text-sky-600 dark:text-cyan-300">
                         {t.projectLabel} {idx + 1}
                       </div>
-                      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{project.title}</h3>
+                      <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+                        {project.title}
+                      </h3>
                     </div>
                     {idx === 0 ? (
-                      <img src={sealLogo} alt="SEAL" className="h-12 w-auto object-contain" />
+                      <img
+                        src={sealLogo}
+                        alt="SEAL"
+                        className="h-12 w-auto object-contain"
+                      />
                     ) : idx === 3 ? (
-                      <img src={hackathonLogo} alt="ACT IN SPACE" className="h-12 w-auto object-contain" />
+                      <img
+                        src={hackathonLogo}
+                        alt="ACT IN SPACE"
+                        className="h-12 w-auto object-contain"
+                      />
                     ) : null}
                   </div>
-                  <p className="leading-7 text-slate-600 dark:text-slate-300">{project.description}</p>
+                  <p className="leading-7 text-slate-600 dark:text-slate-300">
+                    {project.description}
+                  </p>
                 </GlassCard>
               ))}
             </div>
           </Section>
 
-          <Section id="skills" title={t.skillsTitle}>
+          <Section id="skills" title={t.skillsTitle} theme={theme}>
             <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
               {Object.entries(t.skillItems).map(([key, items], idx) => (
                 <GlassCard key={key} className="overflow-hidden">
                   <div className="mb-4 flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-slate-900 dark:text-white">{t.skillGroups[key]}</h3>
-                    {idx === 0 && <Code2 className="h-5 w-5 text-sky-500 dark:text-cyan-300" />}
-                    {idx === 1 && <TerminalSquare className="h-5 w-5 text-sky-500 dark:text-cyan-300" />}
-                    {idx === 2 && <Network className="h-5 w-5 text-sky-500 dark:text-cyan-300" />}
-                    {idx === 3 && <Globe className="h-5 w-5 text-sky-500 dark:text-cyan-300" />}
-                    {idx === 4 && <Sparkles className="h-5 w-5 text-sky-500 dark:text-cyan-300" />}
+                    <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+                      {t.skillGroups[key]}
+                    </h3>
+                    {idx === 0 && (
+                      <Code2 className="h-5 w-5 text-sky-500 dark:text-cyan-300" />
+                    )}
+                    {idx === 1 && (
+                      <TerminalSquare className="h-5 w-5 text-sky-500 dark:text-cyan-300" />
+                    )}
+                    {idx === 2 && (
+                      <Network className="h-5 w-5 text-sky-500 dark:text-cyan-300" />
+                    )}
+                    {idx === 3 && (
+                      <Globe className="h-5 w-5 text-sky-500 dark:text-cyan-300" />
+                    )}
+                    {idx === 4 && (
+                      <Sparkles className="h-5 w-5 text-sky-500 dark:text-cyan-300" />
+                    )}
                   </div>
                   <div className="flex flex-wrap gap-3">
                     {items.map((item) => (
@@ -1049,16 +1266,26 @@ export default function App() {
             </div>
           </Section>
 
-          <Section id="experience" title={t.experienceTitle}>
+          <Section id="experience" title={t.experienceTitle} theme={theme}>
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
               <GlassCard>
                 <div className="mb-5 flex items-center justify-between gap-4">
                   <div>
-                    <div className="mb-2 text-xs uppercase tracking-[0.24em] text-sky-600 dark:text-cyan-300">{t.internshipLabel}</div>
-                    <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">{t.internship}</h3>
-                    <p className="mt-2 text-slate-600 dark:text-slate-300">{t.internshipCompany}</p>
+                    <div className="mb-2 text-xs uppercase tracking-[0.24em] text-sky-600 dark:text-cyan-300">
+                      {t.internshipLabel}
+                    </div>
+                    <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">
+                      {t.internship}
+                    </h3>
+                    <p className="mt-2 text-slate-600 dark:text-slate-300">
+                      {t.internshipCompany}
+                    </p>
                   </div>
-                  <img src="logo-cabinet-abid.png" alt="CABINET ABID" className="h-14 w-auto object-contain" />
+                  <img
+                    src="logo-cabinet-abid.png"
+                    alt="CABINET ABID"
+                    className="h-14 w-auto object-contain"
+                  />
                 </div>
                 <div className="space-y-3">
                   {t.internshipTasks.map((task) => (
@@ -1075,17 +1302,32 @@ export default function App() {
               <GlassCard>
                 <div className="mb-4 flex items-center gap-3">
                   <Briefcase className="h-5 w-5 text-sky-500 dark:text-cyan-300" />
-                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{t.volunteering}</h3>
+                  <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+                    {t.volunteering}
+                  </h3>
                 </div>
                 <div className="space-y-4">
                   {t.volunteeringItems.map((item, index) => (
-                    <div key={item.title} className="rounded-2xl border border-white/20 bg-white/55 p-4 dark:border-white/10 dark:bg-white/5">
+                    <div
+                      key={item.title}
+                      className="rounded-2xl border border-white/20 bg-white/55 p-4 dark:border-white/10 dark:bg-white/5"
+                    >
                       <div className="flex items-center justify-between gap-4">
                         <div>
-                          <h4 className="font-medium text-slate-900 dark:text-white">{item.title}</h4>
-                          <p className="mt-2 leading-7 text-slate-600 dark:text-slate-300">{item.description}</p>
+                          <h4 className="font-medium text-slate-900 dark:text-white">
+                            {item.title}
+                          </h4>
+                          <p className="mt-2 leading-7 text-slate-600 dark:text-slate-300">
+                            {item.description}
+                          </p>
                         </div>
-                        {index === 1 && <img src={bdaLogo} alt="BDA ESAIP" className="h-14 w-auto object-contain" />}
+                        {index === 1 && (
+                          <img
+                            src={bdaLogo}
+                            alt="BDA ESAIP"
+                            className="h-14 w-auto object-contain"
+                          />
+                        )}
                       </div>
                     </div>
                   ))}
@@ -1094,7 +1336,7 @@ export default function App() {
             </div>
           </Section>
 
-          <Section id="distinctions" title={t.distinctionsTitle}>
+          <Section id="distinctions" title={t.distinctionsTitle} theme={theme}>
             <GlassCard className="relative overflow-hidden">
               <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-sky-400/10 to-transparent dark:from-cyan-300/10" />
               <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
@@ -1102,20 +1344,24 @@ export default function App() {
                   <div className="rounded-3xl border border-white/20 bg-white/60 p-4 dark:border-white/10 dark:bg-white/5">
                     <Award className="h-8 w-8 text-sky-500 dark:text-cyan-300" />
                   </div>
-                  <p className="max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-200">{t.distinctionText}</p>
+                  <p className="max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-200">
+                    {t.distinctionText}
+                  </p>
                 </div>
               </div>
             </GlassCard>
           </Section>
 
-          <Section id="languages" title={t.languagesTitle}>
+          <Section id="languages" title={t.languagesTitle} theme={theme}>
             <div className="grid gap-6 md:grid-cols-3">
               {t.languageItems.map((item, idx) => (
                 <GlassCard key={item} className="text-center">
                   <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white/60 dark:border-white/10 dark:bg-white/5">
                     <Languages className="h-6 w-6 text-sky-500 dark:text-cyan-300" />
                   </div>
-                  <div className="text-lg font-medium text-slate-900 dark:text-white">{item}</div>
+                  <div className="text-lg font-medium text-slate-900 dark:text-white">
+                    {item}
+                  </div>
                   <div className="mt-3 h-1.5 rounded-full bg-slate-200 dark:bg-white/10">
                     <motion.div
                       initial={{ width: 0 }}
@@ -1130,10 +1376,12 @@ export default function App() {
             </div>
           </Section>
 
-          <Section id="contact" title={t.contactTitle} className="pb-24">
+          <Section id="contact" title={t.contactTitle} className="pb-24" theme={theme}>
             <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
               <GlassCard>
-                <h3 className="mb-6 text-2xl font-semibold text-slate-900 dark:text-white">Mouad Derraz</h3>
+                <h3 className="mb-6 text-2xl font-semibold text-slate-900 dark:text-white">
+                  Mouad Derraz
+                </h3>
                 <div className="space-y-4">
                   {socialLinks.map(({ key, icon: Icon, href, text }) => (
                     <motion.a
@@ -1149,11 +1397,17 @@ export default function App() {
                           <Icon className="h-5 w-5 text-sky-500 dark:text-cyan-300" />
                         </div>
                         <div>
-                          <div className="text-sm text-slate-500 dark:text-slate-400">{t.socialLabels[key]}</div>
-                          <div className="text-slate-900 dark:text-white">{key === "location" ? t.location : text}</div>
+                          <div className="text-sm text-slate-500 dark:text-slate-400">
+                            {t.socialLabels[key]}
+                          </div>
+                          <div className="text-slate-900 dark:text-white">
+                            {key === "location" ? t.location : text}
+                          </div>
                         </div>
                       </div>
-                      {href !== "#" && <ExternalLink className="h-4 w-4 text-slate-400 transition group-hover:text-sky-500 dark:group-hover:text-cyan-300" />}
+                      {href !== "#" && (
+                        <ExternalLink className="h-4 w-4 text-slate-400 transition group-hover:text-sky-500 dark:group-hover:text-cyan-300" />
+                      )}
                     </motion.a>
                   ))}
                 </div>
@@ -1162,7 +1416,9 @@ export default function App() {
               <GlassCard className="relative overflow-hidden">
                 <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-sky-400/10 blur-3xl dark:bg-cyan-300/10" />
                 <div className="relative">
-                  <h3 className="mb-4 text-2xl font-semibold text-slate-900 dark:text-white">{t.formTitle}</h3>
+                  <h3 className="mb-4 text-2xl font-semibold text-slate-900 dark:text-white">
+                    {t.formTitle}
+                  </h3>
                   <ContactForm t={t} />
                 </div>
               </GlassCard>
